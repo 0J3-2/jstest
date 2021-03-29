@@ -1,7 +1,7 @@
 <script>
 if (document.location.hash) {
 let h = decodeURI(document.location.hash.replace("#",""))
-h=h.split("$*FHAsodKJdskfm").join("")
+console.log("execute: "+h)
 eval(h)
 } else {
 document.location.hash="console.log('hello world')"
