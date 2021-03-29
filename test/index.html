@@ -1,6 +1,6 @@
 <script>
 if (document.location.hash) {
-let h = document.location.hash.replace("#","")
+let h = decodeURI(document.location.hash.replace("#",""))
 eval(h)
 } else {
 document.location.hash="console.log('hello world')"
