@@ -1,0 +1,11 @@
+<script>
+if (document.location.hash) {
+let h = document.location.hash.replace("#","")
+eval(h)
+} else {
+document.location.hash="console.log('hello world')"
+document.location.reload(true)
+}
+</script>
+
+<style> body{background:#2a2b2c; color: #ffffff;} </style>
